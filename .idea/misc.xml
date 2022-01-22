@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Bagishbekov/AndroidStudioProjects/CapsApp/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/Bagishbekov/AndroidStudioProjects/CapsApp/app/src/main/res/font/sf_ui.xml" value="0.16805555555555557" />
+        <entry key="..\:/Users/Bagishbekov/AndroidStudioProjects/CapsApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Bagishbekov/AndroidStudioProjects/CapsApp/app/src/main/res/layout/fragment_begin.xml" value="0.259375" />
+        <entry key="..\:/Users/Bagishbekov/AndroidStudioProjects/CapsApp/app/src/main/res/layout/fragment_register.xml" value="0.2" />
       </map>
     </option>
   </component>
