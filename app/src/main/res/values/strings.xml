@@ -8,4 +8,13 @@
     <string name="name">Имя</string>
     <string name="phone_number">Номер телефона</string>
     <string name="or">⎯⎯⎯⎯⎯⎯⎯⎯ или ⎯⎯⎯⎯⎯⎯⎯⎯</string>
+    <string name="login">Войти</string>
+    <string name="dont_register">Еще не зарегистрированы?</string>
+    <string name="forgotPassword">Забыли пароль?</string>
+    <string name="restorePassword">Восстановить</string>
+    <string name="custom_caps">CUSTOM CAPS</string>
+    <string name="restore_password">Восстановить пароль</string>
+    <string name="send">Отправить</string>
+    <string name="_996_788_999_555">+ 996 788 999 555</string>
+    <string name="restore_kod_message">Введите номер, указанный при \n регистрации. Вам будет отправлен код \n подтверждения</string>
 </resources>

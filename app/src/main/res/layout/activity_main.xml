@@ -1,137 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.activities.MainActivity"
+    android:orientation="vertical">
 
-
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="83dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/custom_caps_logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription" />
-
-    <TextView
-        android:id="@+id/tv_registration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="34dp"
-        android:fontFamily="@font/sf_ui_bold"
-        android:text="@string/registration"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
-
-    <View
+    <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_margin="30dp"
-        android:background="@android:color/darker_gray"
-        app:layout_constraintTop_toBottomOf="@id/tv_registration" />
+        android:layout_height="match_parent"
+        android:id="@+id/main_container_fragments"
+        />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edt_name"
-        style="@style/auth_edt_styles"
-        android:layout_marginTop="50dp"
-        android:drawableStart="@drawable/user"
-        android:drawablePadding="10dp"
-        android:hint="@string/name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_registration" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edt_phone"
-        style="@style/auth_edt_styles"
-        android:layout_marginTop="10dp"
-        android:drawableStart="@drawable/phone"
-        android:drawablePadding="10dp"
-        android:hint="@string/phone_number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edt_name" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edt_password"
-        style="@style/auth_edt_styles"
-        android:layout_marginTop="10dp"
-        android:drawableStart="@drawable/password"
-        android:drawablePadding="10dp"
-        android:hint="@string/password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edt_phone" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edt_password_confirm"
-        style="@style/auth_edt_styles"
-        android:layout_marginTop="10dp"
-        android:drawableStart="@drawable/password"
-        android:drawablePadding="10dp"
-        android:hint="@string/confirm_password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edt_password" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_registration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/white"
-        android:paddingHorizontal="56dp"
-        android:paddingVertical="18dp"
-        android:text="@string/registration"
-        android:textAllCaps="false"
-        android:textColor="@color/gray"
-        android:textSize="16sp"
-        app:cornerRadius="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edt_password_confirm" />
-
-    <TextView
-        android:id="@+id/tv_or"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textSize="16sp"
-        android:text="@string/or"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_registration" />
-
-    <ImageButton
-        android:id="@+id/btn_facebook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="@color/transparent"
-        android:src="@drawable/facebook_social"
-        app:layout_constraintStart_toStartOf="@id/tv_or"
-        app:layout_constraintTop_toBottomOf="@id/tv_or"
-        tools:ignore="ContentDescription" />
-
-    <ImageButton
-        android:id="@+id/btn_google"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="70dp"
-        android:backgroundTint="@color/transparent"
-        android:src="@drawable/google_social"
-        app:layout_constraintEnd_toEndOf="@id/tv_or"
-        app:layout_constraintTop_toBottomOf="@id/tv_or"
-        tools:ignore="ContentDescription" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
