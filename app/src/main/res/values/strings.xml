@@ -16,5 +16,5 @@
     <string name="restore_password">Восстановить пароль</string>
     <string name="send">Отправить</string>
     <string name="_996_788_999_555">+ 996 788 999 555</string>
-    <string name="restore_kod_message">Введите номер, указанный при \n регистрации. Вам будет отправлен код \n подтверждения</string>
+    <string name="restore_kod_message">Введите номер, указанный при \nрегистрации. Вам будет отправлен код \nподтверждения</string>
 </resources>
